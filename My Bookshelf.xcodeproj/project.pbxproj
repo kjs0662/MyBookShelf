@@ -1,0 +1,501 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F33CFCF424FD189800DF72B9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F33CFCF324FD189800DF72B9 /* AppDelegate.m */; };
+		F33CFCF724FD189800DF72B9 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F33CFCF624FD189800DF72B9 /* SceneDelegate.m */; };
+		F33CFCFD24FD189800DF72B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F33CFCFB24FD189800DF72B9 /* Main.storyboard */; };
+		F33CFCFF24FD189C00DF72B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F33CFCFE24FD189C00DF72B9 /* Assets.xcassets */; };
+		F33CFD0224FD189C00DF72B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F33CFD0024FD189C00DF72B9 /* LaunchScreen.storyboard */; };
+		F33CFD0524FD189C00DF72B9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F33CFD0424FD189C00DF72B9 /* main.m */; };
+		F33CFD0D24FD1C8600DF72B9 /* SBNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F33CFD0C24FD1C8600DF72B9 /* SBNavigationViewController.m */; };
+		F33CFD1024FD22C300DF72B9 /* SBSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F33CFD0F24FD22C300DF72B9 /* SBSearchViewController.m */; };
+		F33CFD1624FD371200DF72B9 /* SBSearchResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F33CFD1524FD371200DF72B9 /* SBSearchResultsViewController.m */; };
+		F33CFD1B24FD45EB00DF72B9 /* SBBookModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F33CFD1A24FD45EB00DF72B9 /* SBBookModel.m */; };
+		F33CFD1E24FD47C700DF72B9 /* SBBookDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F33CFD1D24FD47C700DF72B9 /* SBBookDetailModel.m */; };
+		F33CFD2224FD499600DF72B9 /* SBApiClient.m in Sources */ = {isa = PBXBuildFile; fileRef = F33CFD2124FD499600DF72B9 /* SBApiClient.m */; };
+		F39FD6FC2502B8A800D59265 /* SBBookDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F39FD6FB2502B8A800D59265 /* SBBookDetailViewController.m */; };
+		F39FD6FF2502C28A00D59265 /* SBPagination.m in Sources */ = {isa = PBXBuildFile; fileRef = F39FD6FE2502C28A00D59265 /* SBPagination.m */; };
+		F3D149FB25012633002C6EF4 /* SBUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = F3D149FA25012633002C6EF4 /* SBUtils.m */; };
+		F3D149FE2501527A002C6EF4 /* SBBookTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F3D149FD2501527A002C6EF4 /* SBBookTableViewCell.m */; };
+		F3D14A0225015394002C6EF4 /* SBBookCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F3D14A0125015394002C6EF4 /* SBBookCollectionViewCell.m */; };
+		F3D14A0525015DEB002C6EF4 /* SBBookService.m in Sources */ = {isa = PBXBuildFile; fileRef = F3D14A0425015DEB002C6EF4 /* SBBookService.m */; };
+		F3D14A0825016BE1002C6EF4 /* SBBookCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = F3D14A0725016BE1002C6EF4 /* SBBookCollectionReusableView.m */; };
+		F3D549C32503B42400487331 /* SBMemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3D549C22503B42400487331 /* SBMemoViewController.m */; };
+		F3D549D62503CF7100487331 /* SBCoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F3D549D52503CF7100487331 /* SBCoreDataManager.m */; };
+		F3D54A0B2503EEDE00487331 /* MyBookShelf.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F3D549D12503CAD700487331 /* MyBookShelf.xcdatamodeld */; };
+		F3D54A302503FAA400487331 /* SBBookDetail+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = F3D54A2E2503FAA400487331 /* SBBookDetail+CoreDataClass.m */; };
+		F3D54A312503FAA400487331 /* SBBookDetail+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F3D54A2F2503FAA400487331 /* SBBookDetail+CoreDataProperties.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F33CFCEF24FD189800DF72B9 /* My Bookshelf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My Bookshelf.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F33CFCF224FD189800DF72B9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F33CFCF324FD189800DF72B9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F33CFCF524FD189800DF72B9 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		F33CFCF624FD189800DF72B9 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		F33CFCFC24FD189800DF72B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F33CFCFE24FD189C00DF72B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F33CFD0124FD189C00DF72B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F33CFD0324FD189C00DF72B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F33CFD0424FD189C00DF72B9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F33CFD0B24FD1C8600DF72B9 /* SBNavigationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBNavigationViewController.h; sourceTree = "<group>"; };
+		F33CFD0C24FD1C8600DF72B9 /* SBNavigationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBNavigationViewController.m; sourceTree = "<group>"; };
+		F33CFD0E24FD22C300DF72B9 /* SBSearchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBSearchViewController.h; sourceTree = "<group>"; };
+		F33CFD0F24FD22C300DF72B9 /* SBSearchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBSearchViewController.m; sourceTree = "<group>"; };
+		F33CFD1424FD371200DF72B9 /* SBSearchResultsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBSearchResultsViewController.h; sourceTree = "<group>"; };
+		F33CFD1524FD371200DF72B9 /* SBSearchResultsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBSearchResultsViewController.m; sourceTree = "<group>"; };
+		F33CFD1924FD45EB00DF72B9 /* SBBookModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBBookModel.h; sourceTree = "<group>"; };
+		F33CFD1A24FD45EB00DF72B9 /* SBBookModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBBookModel.m; sourceTree = "<group>"; };
+		F33CFD1C24FD47C700DF72B9 /* SBBookDetailModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBBookDetailModel.h; sourceTree = "<group>"; };
+		F33CFD1D24FD47C700DF72B9 /* SBBookDetailModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBBookDetailModel.m; sourceTree = "<group>"; };
+		F33CFD2024FD499600DF72B9 /* SBApiClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBApiClient.h; sourceTree = "<group>"; };
+		F33CFD2124FD499600DF72B9 /* SBApiClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBApiClient.m; sourceTree = "<group>"; };
+		F39FD6FA2502B8A800D59265 /* SBBookDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBBookDetailViewController.h; sourceTree = "<group>"; };
+		F39FD6FB2502B8A800D59265 /* SBBookDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBBookDetailViewController.m; sourceTree = "<group>"; };
+		F39FD6FD2502C28A00D59265 /* SBPagination.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBPagination.h; sourceTree = "<group>"; };
+		F39FD6FE2502C28A00D59265 /* SBPagination.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBPagination.m; sourceTree = "<group>"; };
+		F3D149F925012633002C6EF4 /* SBUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBUtils.h; sourceTree = "<group>"; };
+		F3D149FA25012633002C6EF4 /* SBUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBUtils.m; sourceTree = "<group>"; };
+		F3D149FC2501527A002C6EF4 /* SBBookTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBBookTableViewCell.h; sourceTree = "<group>"; };
+		F3D149FD2501527A002C6EF4 /* SBBookTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBBookTableViewCell.m; sourceTree = "<group>"; };
+		F3D14A0025015394002C6EF4 /* SBBookCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBBookCollectionViewCell.h; sourceTree = "<group>"; };
+		F3D14A0125015394002C6EF4 /* SBBookCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBBookCollectionViewCell.m; sourceTree = "<group>"; };
+		F3D14A0325015DEB002C6EF4 /* SBBookService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBBookService.h; sourceTree = "<group>"; };
+		F3D14A0425015DEB002C6EF4 /* SBBookService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBBookService.m; sourceTree = "<group>"; };
+		F3D14A0625016BE1002C6EF4 /* SBBookCollectionReusableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBBookCollectionReusableView.h; sourceTree = "<group>"; };
+		F3D14A0725016BE1002C6EF4 /* SBBookCollectionReusableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBBookCollectionReusableView.m; sourceTree = "<group>"; };
+		F3D549C12503B42400487331 /* SBMemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBMemoViewController.h; sourceTree = "<group>"; };
+		F3D549C22503B42400487331 /* SBMemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBMemoViewController.m; sourceTree = "<group>"; };
+		F3D549D22503CAD700487331 /* BookShelf.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BookShelf.xcdatamodel; sourceTree = "<group>"; };
+		F3D549D42503CF7100487331 /* SBCoreDataManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBCoreDataManager.h; sourceTree = "<group>"; };
+		F3D549D52503CF7100487331 /* SBCoreDataManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBCoreDataManager.m; sourceTree = "<group>"; };
+		F3D54A2C2503FAA400487331 /* SBBookDetail+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SBBookDetail+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F3D54A2D2503FAA400487331 /* SBBookDetail+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SBBookDetail+CoreDataClass.h"; sourceTree = "<group>"; };
+		F3D54A2E2503FAA400487331 /* SBBookDetail+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "SBBookDetail+CoreDataClass.m"; sourceTree = "<group>"; };
+		F3D54A2F2503FAA400487331 /* SBBookDetail+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "SBBookDetail+CoreDataProperties.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F33CFCEC24FD189800DF72B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F33CFCE624FD189800DF72B9 = {
+			isa = PBXGroup;
+			children = (
+				F33CFCF124FD189800DF72B9 /* My Bookshelf */,
+				F33CFCF024FD189800DF72B9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F33CFCF024FD189800DF72B9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F33CFCEF24FD189800DF72B9 /* My Bookshelf.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F33CFCF124FD189800DF72B9 /* My Bookshelf */ = {
+			isa = PBXGroup;
+			children = (
+				F3D549C72503C8EE00487331 /* CoreData */,
+				F3D149FF25015379002C6EF4 /* Cell */,
+				F33CFD1F24FD497B00DF72B9 /* Helper */,
+				F33CFD1824FD45AB00DF72B9 /* Model */,
+				F33CFD1724FD459100DF72B9 /* ViewController */,
+				F33CFCF224FD189800DF72B9 /* AppDelegate.h */,
+				F33CFCF324FD189800DF72B9 /* AppDelegate.m */,
+				F33CFCF524FD189800DF72B9 /* SceneDelegate.h */,
+				F33CFCF624FD189800DF72B9 /* SceneDelegate.m */,
+				F33CFCFB24FD189800DF72B9 /* Main.storyboard */,
+				F33CFCFE24FD189C00DF72B9 /* Assets.xcassets */,
+				F33CFD0024FD189C00DF72B9 /* LaunchScreen.storyboard */,
+				F33CFD0324FD189C00DF72B9 /* Info.plist */,
+				F33CFD0424FD189C00DF72B9 /* main.m */,
+				F3D549D12503CAD700487331 /* MyBookShelf.xcdatamodeld */,
+			);
+			path = "My Bookshelf";
+			sourceTree = "<group>";
+		};
+		F33CFD1724FD459100DF72B9 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F33CFD0B24FD1C8600DF72B9 /* SBNavigationViewController.h */,
+				F33CFD0C24FD1C8600DF72B9 /* SBNavigationViewController.m */,
+				F33CFD0E24FD22C300DF72B9 /* SBSearchViewController.h */,
+				F33CFD0F24FD22C300DF72B9 /* SBSearchViewController.m */,
+				F33CFD1424FD371200DF72B9 /* SBSearchResultsViewController.h */,
+				F33CFD1524FD371200DF72B9 /* SBSearchResultsViewController.m */,
+				F39FD6FA2502B8A800D59265 /* SBBookDetailViewController.h */,
+				F39FD6FB2502B8A800D59265 /* SBBookDetailViewController.m */,
+				F3D549C12503B42400487331 /* SBMemoViewController.h */,
+				F3D549C22503B42400487331 /* SBMemoViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		F33CFD1824FD45AB00DF72B9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F39FD6FD2502C28A00D59265 /* SBPagination.h */,
+				F39FD6FE2502C28A00D59265 /* SBPagination.m */,
+				F33CFD1924FD45EB00DF72B9 /* SBBookModel.h */,
+				F33CFD1A24FD45EB00DF72B9 /* SBBookModel.m */,
+				F33CFD1C24FD47C700DF72B9 /* SBBookDetailModel.h */,
+				F33CFD1D24FD47C700DF72B9 /* SBBookDetailModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F33CFD1F24FD497B00DF72B9 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				F33CFD2024FD499600DF72B9 /* SBApiClient.h */,
+				F33CFD2124FD499600DF72B9 /* SBApiClient.m */,
+				F3D149F925012633002C6EF4 /* SBUtils.h */,
+				F3D149FA25012633002C6EF4 /* SBUtils.m */,
+				F3D14A0325015DEB002C6EF4 /* SBBookService.h */,
+				F3D14A0425015DEB002C6EF4 /* SBBookService.m */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		F3D149FF25015379002C6EF4 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F3D149FC2501527A002C6EF4 /* SBBookTableViewCell.h */,
+				F3D149FD2501527A002C6EF4 /* SBBookTableViewCell.m */,
+				F3D14A0025015394002C6EF4 /* SBBookCollectionViewCell.h */,
+				F3D14A0125015394002C6EF4 /* SBBookCollectionViewCell.m */,
+				F3D14A0625016BE1002C6EF4 /* SBBookCollectionReusableView.h */,
+				F3D14A0725016BE1002C6EF4 /* SBBookCollectionReusableView.m */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		F3D549C72503C8EE00487331 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				F3D54A2C2503FAA400487331 /* SBBookDetail+CoreDataProperties.h */,
+				F3D54A2F2503FAA400487331 /* SBBookDetail+CoreDataProperties.m */,
+				F3D54A2D2503FAA400487331 /* SBBookDetail+CoreDataClass.h */,
+				F3D54A2E2503FAA400487331 /* SBBookDetail+CoreDataClass.m */,
+				F3D549D42503CF7100487331 /* SBCoreDataManager.h */,
+				F3D549D52503CF7100487331 /* SBCoreDataManager.m */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F33CFCEE24FD189800DF72B9 /* My Bookshelf */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F33CFD0824FD189C00DF72B9 /* Build configuration list for PBXNativeTarget "My Bookshelf" */;
+			buildPhases = (
+				F33CFCEB24FD189800DF72B9 /* Sources */,
+				F33CFCEC24FD189800DF72B9 /* Frameworks */,
+				F33CFCED24FD189800DF72B9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "My Bookshelf";
+			productName = "My Bookshelf";
+			productReference = F33CFCEF24FD189800DF72B9 /* My Bookshelf.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F33CFCE724FD189800DF72B9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1200;
+				ORGANIZATIONNAME = JinseonKim;
+				TargetAttributes = {
+					F33CFCEE24FD189800DF72B9 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+				};
+			};
+			buildConfigurationList = F33CFCEA24FD189800DF72B9 /* Build configuration list for PBXProject "My Bookshelf" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F33CFCE624FD189800DF72B9;
+			productRefGroup = F33CFCF024FD189800DF72B9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F33CFCEE24FD189800DF72B9 /* My Bookshelf */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F33CFCED24FD189800DF72B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F33CFD0224FD189C00DF72B9 /* LaunchScreen.storyboard in Resources */,
+				F33CFCFF24FD189C00DF72B9 /* Assets.xcassets in Resources */,
+				F33CFCFD24FD189800DF72B9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F33CFCEB24FD189800DF72B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F33CFD1B24FD45EB00DF72B9 /* SBBookModel.m in Sources */,
+				F33CFD1624FD371200DF72B9 /* SBSearchResultsViewController.m in Sources */,
+				F3D549D62503CF7100487331 /* SBCoreDataManager.m in Sources */,
+				F3D149FE2501527A002C6EF4 /* SBBookTableViewCell.m in Sources */,
+				F33CFD1E24FD47C700DF72B9 /* SBBookDetailModel.m in Sources */,
+				F39FD6FF2502C28A00D59265 /* SBPagination.m in Sources */,
+				F3D149FB25012633002C6EF4 /* SBUtils.m in Sources */,
+				F3D54A0B2503EEDE00487331 /* MyBookShelf.xcdatamodeld in Sources */,
+				F3D14A0225015394002C6EF4 /* SBBookCollectionViewCell.m in Sources */,
+				F33CFD1024FD22C300DF72B9 /* SBSearchViewController.m in Sources */,
+				F33CFCF424FD189800DF72B9 /* AppDelegate.m in Sources */,
+				F39FD6FC2502B8A800D59265 /* SBBookDetailViewController.m in Sources */,
+				F33CFD0D24FD1C8600DF72B9 /* SBNavigationViewController.m in Sources */,
+				F33CFD0524FD189C00DF72B9 /* main.m in Sources */,
+				F3D14A0525015DEB002C6EF4 /* SBBookService.m in Sources */,
+				F33CFCF724FD189800DF72B9 /* SceneDelegate.m in Sources */,
+				F3D54A302503FAA400487331 /* SBBookDetail+CoreDataClass.m in Sources */,
+				F3D549C32503B42400487331 /* SBMemoViewController.m in Sources */,
+				F33CFD2224FD499600DF72B9 /* SBApiClient.m in Sources */,
+				F3D54A312503FAA400487331 /* SBBookDetail+CoreDataProperties.m in Sources */,
+				F3D14A0825016BE1002C6EF4 /* SBBookCollectionReusableView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F33CFCFB24FD189800DF72B9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F33CFCFC24FD189800DF72B9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F33CFD0024FD189C00DF72B9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F33CFD0124FD189C00DF72B9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F33CFD0624FD189C00DF72B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F33CFD0724FD189C00DF72B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F33CFD0924FD189C00DF72B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7664AFA9ZS;
+				INFOPLIST_FILE = "My Bookshelf/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jinseonkim.My-Bookshelf";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F33CFD0A24FD189C00DF72B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7664AFA9ZS;
+				INFOPLIST_FILE = "My Bookshelf/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jinseonkim.My-Bookshelf";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F33CFCEA24FD189800DF72B9 /* Build configuration list for PBXProject "My Bookshelf" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F33CFD0624FD189C00DF72B9 /* Debug */,
+				F33CFD0724FD189C00DF72B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F33CFD0824FD189C00DF72B9 /* Build configuration list for PBXNativeTarget "My Bookshelf" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F33CFD0924FD189C00DF72B9 /* Debug */,
+				F33CFD0A24FD189C00DF72B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F3D549D12503CAD700487331 /* MyBookShelf.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F3D549D22503CAD700487331 /* BookShelf.xcdatamodel */,
+			);
+			currentVersion = F3D549D22503CAD700487331 /* BookShelf.xcdatamodel */;
+			path = MyBookShelf.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F33CFCE724FD189800DF72B9 /* Project object */;
+}
